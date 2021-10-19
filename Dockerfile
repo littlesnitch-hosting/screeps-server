@@ -13,7 +13,7 @@ RUN	apk add --no-cache --virtual .build-deps \
 
 RUN npm --global config set user root
 
-RUN	npm --global install "screeps@${version}" --cache /tmp/empty-cache; \
+RUN	npm --global install node-gyp "screeps@${version}" --cache /tmp/empty-cache; \
 	apk del --no-cache .build-deps; \
 	rm -fr /tmp/empty-cache /root/.cache /root/.config;
 
