@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+  screeps:
+    build: ./
+    networks:
+      - internal
+    volumes:
+      - screeps-data:/screeps
+    ports:
+      - 21025:21025
+      - 21026:21026
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - redis
+  mongo:
+    image: mongo
+    networks:
+      - internal
+    volumes:
+      - mongo-data:/data
+    restart: unless-stopped
+  redis:
+    image: redis
+    networks:
+      - internal
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
+  redis-data:
+  screeps-data:
+
+networks:
+  internal:

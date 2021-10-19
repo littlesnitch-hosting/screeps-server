@@ -1,0 +1,15 @@
+{
+    "mods": [
+      "node_modules\\screepsmod-auth\\index.js",
+      "node_modules\\screepsmod-features\\index.js",
+      "node_modules\\screepsmod-mongo\\index.js",
+      "node_modules\\screepsmod-admin-utils\\index.js",
+      "node_modules\\screepsmod-dynamicmarket\\index.js",
+      "node_modules\\screepsmod-cors\\index.js",
+      "node_modules\\screepsmod-pvp-api\\index.js",
+      "node_modules\\screepsmod-leaderboard\\index.js"
+    ],
+    "bots": {
+      "simplebot": "node_modules/@screeps/simplebot/src"
+    }
+  }

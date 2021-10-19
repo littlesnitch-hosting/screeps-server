@@ -1,0 +1,16 @@
+serverConfig: 
+  map: random_1x2
+  tickRate: 200
+  socketUpdateRate: 200
+  whitelist:
+  shardName: 'LTTS'
+  constants:
+    UPGRADE_POWER: 10
+    POWER_CREEP_SPAWN_COOLDOWN: 3600000
+    POWER_CREEP_DELETE_COOLDOWN: 3600000
+  welcomeText: |
+    <h1>Welcome</h1>
+  gclToCPU: true
+  maxCPU: 100
+  baseCPU: 20
+  stepCPU: 10

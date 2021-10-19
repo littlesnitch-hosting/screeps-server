@@ -1,0 +1,31 @@
+steam_api_key = <steamApiKey>
+port = 21025
+host = 0.0.0.0
+password = 
+cli_port = 21026
+cli_host = localhost
+runners_cnt = 2
+runner_threads = 4
+processors_cnt = 2
+logdir = logs
+modfile = mods.json
+assetdir = assets
+db = db.json
+log_console = false
+log_rotate_keep = 5
+storage_disabled = false
+restart_interval = 3600
+
+[github]
+clientId = <clientId>
+clientSecret = <clientSecret>
+
+[history]
+historyChunkSize = 100
+mode = 'sqlite'
+
+[mongo]
+host = mongo
+
+[redis]
+host = redis
