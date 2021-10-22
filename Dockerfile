@@ -1,6 +1,6 @@
 ARG version=latest
 
-FROM node:12-alpine as BASE
+FROM node:14-alpine as BASE
 WORKDIR /srv/screeps-server
 
 RUN	apk add --no-cache --virtual .build-deps \
@@ -9,7 +9,9 @@ RUN	apk add --no-cache --virtual .build-deps \
 		g++ \
 		curl \
 		git \
-		python3
+		python3 \
+		python \
+		make
 
 RUN npm --global config set user root
 
